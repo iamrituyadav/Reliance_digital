@@ -1,5 +1,32 @@
 {
-    "users":[],
-    "products":[],
-    "cart":[]
+    "mobiles": [
+        {
+            "id":1,
+            "name":"Apple iPhone 13 128 GB, Midnight (Black)",
+            "image":"https://www.reliancedigital.in/medias/Apple-iPhone-13-Smartphone-491997699-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyNTgzM3xpbWFnZS9qcGVnfGltYWdlcy9oMWYvaDg0Lzk2MzQ2MjEzOTA4NzguanBnfGY3YTVhNjVjMGRkYWE1NWNkMjRmOTQ0YjEyZWUxMWU1MjE1ODM5MTlmOGI0ZjA5MWRlNDg5OWI3OTEyYjM4YWU",
+            "price":79900
+        },
+
+        {
+            "id":2,
+            "name":"OnePlus Nord CE 5G 256 GB, 12 GB RAM, Silver Ray, Smartphone" ,
+            "image":"https://www.reliancedigital.in/medias/OnePlus-Nord-CE-12GB-25GB-SilverRay-491996840-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMTI3ODZ8aW1hZ2UvanBlZ3xpbWFnZXMvaGQ1L2gzMy85NTc3Mzk2MjczMTgyLmpwZ3w2NzkyODQxZGFmM2NiOGMzZGNiYmZmNWI4MmEzMzA1NTcwZGNmMzMxZmQzZGJlZDBiMWM5M2Q3NmZhN2NkNWU1",
+            "price":27999
+        },
+
+        {
+            "id":3,
+            "name":"Apple iPhone 13 128 GB, Midnight (Black)",
+            "image":"https://www.reliancedigital.in/medias/Apple-iPhone-13-Smartphone-491997699-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyNTgzM3xpbWFnZS9qcGVnfGltYWdlcy9oMWYvaDg0Lzk2MzQ2MjEzOTA4NzguanBnfGY3YTVhNjVjMGRkYWE1NWNkMjRmOTQ0YjEyZWUxMWU1MjE1ODM5MTlmOGI0ZjA5MWRlNDg5OWI3OTEyYjM4YWU",
+            "price":79900
+        },
+
+        {
+            "id":4,
+            "name":"OnePlus Nord CE 5G 256 GB, 12 GB RAM, Silver Ray, Smartphone" ,
+            "image":"https://www.reliancedigital.in/medias/OnePlus-Nord-CE-12GB-25GB-SilverRay-491996840-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMTI3ODZ8aW1hZ2UvanBlZ3xpbWFnZXMvaGQ1L2gzMy85NTc3Mzk2MjczMTgyLmpwZ3w2NzkyODQxZGFmM2NiOGMzZGNiYmZmNWI4MmEzMzA1NTcwZGNmMzMxZmQzZGJlZDBiMWM5M2Q3NmZhN2NkNWU1",
+            "price":27999
+        }
+    ]
 }
+

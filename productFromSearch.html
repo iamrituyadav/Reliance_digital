@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/productFromSearch.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="slideshow"></div>
+
+      <div>
+        <p><a href="">Home</a></p>
+        <p>/</p>
+        <p>Smartphones</p>
+      </div>
+
+      <div id="lowerDiv">
+        <div id="leftPanal">
+          <p>Filters</p>
+          <hr />
+
+          <p>Price</p>
+          <input type="range" id="" min="1000" max="50000" />
+          <hr />
+
+          <p>Availability</p>
+          <input type="checkbox" name="" id="" />Exclude out of stock
+          <hr />
+
+          <p>Brand</p>
+          <input type="checkbox" name="" id="" />Xiomi
+          <br />
+          <input type="checkbox" name="" id="" />Samsung
+          <br />
+          <input type="checkbox" name="" id="" />Realme
+          <br />
+          <input type="checkbox" name="" id="" />VIVO
+          <br />
+          <p>See more</p>
+          <hr />
+
+          <p>Discount Percent</p>
+          <input type="checkbox" name="" id="" />40% to 50%
+          <br />
+          <input type="checkbox" name="" id="" />30% to 40%
+          <br />
+          <input type="checkbox" name="" id="" />20% to 30%
+          <br />
+          <input type="checkbox" name="" id="" />10% to 20%
+          <br />
+          <p>See more</p>
+          <hr />
+
+          <p>Features</p>
+          <hr />
+          <p>5G</p>
+          <hr />
+          <p>4G</p>
+          <hr />
+          <p>Memory RAM</p>
+          <hr />
+          <p>Internal Storage</p>
+          <hr />
+          <p>Primary Camera</p>
+          <hr />
+          <p>Selfie Camera</p>
+          <hr />
+          <p>Battery Capacity</p>
+          <hr />
+          <p>Operating System Type</p>
+        </div>
+
+        <div id="rightPanal">
+          <div>
+            <h2>SMARTPHONES</h2>
+            <div id="sortBy">
+              <span>Sort by:</span>
+              <select onclick="" id="">
+                <option value="">Relevance</option>
+                <option value="">Name(A-Z)</option>
+                <option value="">Name(Z-A)</option>
+                <option value="">Price(Low-High)</option>
+                <option value="">Price(High-Low)</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import { addProducts, showData } from "./scripts/productFromSearch.js";
+
+  let url = "http://127.0.0.1:3000/api/mobiles";
+
+  let res = addProducts(url);
+
+  res
+    .then((res) => {
+      console.log("res:", res);
+      showData(res, container);
+    })
+
+    .catch((err) => {
+      console.log("err:", err);
+    });
+
+  //   async function addProducts() {
+  //     try {
+  //       let response = await fetch(`http://127.0.0.1:3000/api/mobiles`); //needs to update
+  //       let data = await response.json();
+  //       console.log("data:", data);
+  //       showData(data);
+  //     } catch (error) {
+  //       console.log("error:", error);
+  //     }
+  //   }
+
+  //   addProducts();
+  //   var dataDiv = document.querySelector("#container");
+  //   function showData(item) {
+  //     item.forEach(function (element) {
+  //       //   console.log("element:", element);
+  //       var div = document.createElement("div");
+  //       div.addEventListener("click", function () {
+  //         let obj = {
+  //           id: id,
+  //         };
+
+  //         localStorage.setItem("product_id", JSON.stringify("id"));
+
+  //         window.location.href = "#";
+  //       });
+  //       var img = document.createElement("img");
+  //       img.src = element.image;
+  //       var name = document.createElement("p");
+  //       name.innerText = element.name;
+  //       var price = document.createElement("p");
+  //       price.innerText = "Price: Rs. " + element.price;
+  //       div.append(img, name, price);
+  //       dataDiv.append(div);
+  //     });
+  //   }
+</script>
