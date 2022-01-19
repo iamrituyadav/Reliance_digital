@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/60d90b68f5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header"></div>
     <div id="main">
+      <!-- section name bar code starts -->
+      <div id="sectionNameBar">
+        <a href=""><i class="fas fa-home-alt"></i></a>
+        <label>></label>
+        <label>Mobiles & Tablets</label>
+        <label>></label>
+        <label>Smart Phones</label>
+        <lable id="brandNamesc"></lable>
+        <label id="deviceNamesc"></label>
+      </div>
+      <!-- section name bar code ends -->
 
-        <!-- Work within this div -->
+      <!-- code for Mobile images start -->
+      <div id="mobDetailsBox">
+          <div id="mobileImages"></div>
+          <div id="detailsDiv">
+              <p id="articleID">Article ID: 491996840</p>
+              <p id="deviceName">OnePlus Nord CE 5G 256 GB, 12 GB RAM</p>
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label id="addComp">Add to Compare <span id="bar">|</span><span><i class="fas fa-share-alt share"></i></span><span id="bar">|</span><span id="print"><i class="fas fa-print share"></i>Print</span></label>
+              <hr id="hline1">
 
+              <!-- Gain more with offers div -->
+              <div>
+                  <p id="gainMore">Gain more with offers (5)</p>
+                  <ul id="offers">
+                      <li>Up to Rs 5000 instant discount with HDFC Bank Credit Cards.<span id="tc"> T&C</span></li>
+                      <li>10% Cashback on EMI transactions with ZestMoney.<span id="tc"> T&C</span></li>
+                      <li>Get up to Rs 350 cashback from Mobikwik.<span id="tc"> T&C</span></li>
+                      <li>10% Cashback with OneCard Credit Cards.<span id="tc"> T&C</span></li>
+                  </ul>
+                  <p id="seeMore">See more >></p>
+              </div>
 
+              <!-- save more with emi div -->
+              <div>
+                  <p id="saveMore">Save more with EMI/Cashback (3) <span id="svtc"> T&C</span></p>
+                  <ul id="payOffers">
+                      <li>Credit Card No-Cost EMI Options.<span id="viewPlans"> View Plans</span></li>
+                      <li>Debit Card No-Cost EMI Options.<span id="viewPlans">View Plans</span></li>
+                      <li>EMIs (Credit Cards) from ₹1318.01/month <span> |</span> <span id="viewPlans"> View all Standard Credit Cards EMI options</span></li>
+                      <li id="wrnty">Warranty: <span id="nrmlFont"> 1 Year manufacturer warranty</span></li>
+                  </ul>
+              </div>
+
+              <!-- Additional services and waranty -->
+              <div>
+                  <p id="addWaranty">Additional Services & Warranties (5)<span style="color: #337AB7;"> View All</span></p>
+                  <p id="addWaranty">Key Features</p>
+                  <ul id="keyFeatures">
+                      <li>16.33 cm (6.43 inches) display, 4500 mAh battery</li>
+                      <li>16 MP (f/2.45) selfie camera</li>
+                      <li>Qualcomm Snapdragon 750G 5G processor</li>
+                      <li>Oxygen OS 11 operating system</li>
+                  </ul>
+                  <p id="addWaranty">Got Feedback to share on this page? <span style="color: #337AB7; font-size: 16px;"> report here.</span></p>
+              </div>
+          </div>
+      </div>
+      
     </div>
     <div id="footer"></div>
-</body>
+  </body>
 </html>

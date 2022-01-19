@@ -1,5 +1,46 @@
 {
-    "users":[],
-    "products":[],
-    "cart":[]
+  "users": [],
+  "products": [
+    {
+      "name": "Oneplus Nord",
+      "image": "https://www.reliancedigital.in/medias/OnePlus-Nord2-5G-Smartphones-491997309-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzcxOTV8aW1hZ2UvanBlZ3xpbWFnZXMvaGU4L2hlMS85NTk5MDk4MDYwODMwLmpwZ3w5YTAyMGI0MzMwNTJhMjhhNzc4Y2NjY2JiN2Y5YmIyMjZkM2RjMWRkOWVmMzk1YTk4YTlkYzU2ZTY5M2EwYzBk",
+      "price": "29,999.00",
+      "brand": "Oneplus",
+      "color": "Grey",
+      "memory": "128 GB",
+      "ram": "8 GB",
+      "id": 1
+    },
+    {
+      "name": "Samsung Galaxy A52s",
+      "image": "https://www.reliancedigital.in/medias/Samsung-A52s-Smartphone-491997581-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3OTI0NXxpbWFnZS9qcGVnfGltYWdlcy9oZDgvaGQyLzk2Mjg4NTY4NzcwODYuanBnfDA0MmVkZmRkNWI1MzllMmM5MjU0ODliYjUzNTVlZjU3NmFkYmExZjcyMzNhZThmYjlhY2Q3Y2EzNTM3ODhiZTI",
+      "price": "37,999.00",
+      "brand": "Samsung",
+      "color": "White",
+      "memory": "128 GB",
+      "ram": "8 GB",
+      "id": 2
+    },
+    {
+      "name": "Realme GT",
+      "image": "https://www.reliancedigital.in/medias/realme-GT-Master-5G-Smartphones-491997518-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMDAyNDl8aW1hZ2UvanBlZ3xpbWFnZXMvaDU3L2hiNi85NjE1NzA3NDcxOTAyLmpwZ3xkOTkxNmM2NGI5MjNjZmFhZTAxNWZjZWI1Mjc2NWViZjIwZGRlYmI4NmMyNWE2MDY2YzYwZDM5NDA0NmNjZGYw",
+      "price": "28,999.00",
+      "brand": "Realme",
+      "color": "Voyager Grey",
+      "memory": "256 GB",
+      "ram": "8 GB",
+      "id": 3
+    },
+    {
+      "name": "Vivo Y51A",
+      "image": "https://www.reliancedigital.in/medias/Vivo-Y51A-Smartphones-491997068-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjM4NDl8aW1hZ2UvanBlZ3xpbWFnZXMvaDI5L2g2Mi85NTg2MjA2Mjc3NjYyLmpwZ3wyMzZlZjBiM2M4YzFiYWI2ZGVlMjNmODQzNmFkM2M3MjMwNDVmZmNlMjM4NDIzZjU1ZTdhODUwMTIxNmIwNDdk",
+      "price": "16,990.00",
+      "brand": "Vivo",
+      "color": "Titanium Sapphire",
+      "memory": "128 GB",
+      "ram": "6 GB",
+      "id": 4
+    }
+  ],
+  "cart": []
 }
