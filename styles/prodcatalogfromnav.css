@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
 }
-div{
+/* div{
     border: 1px solid black;
+} */
+body{
+    font-family: Roboto,"system-ui",sans-serif;
 }
 #topCarasoul{
     height: fit-content;
@@ -21,6 +24,7 @@ div{
     display: flex;
     align-items: center;
     gap: 3px;
+    background-color: ghostwhite;
 }
 #showingPageName img{
     width: 18px;
@@ -57,7 +61,7 @@ div{
 #qgLeft>div:nth-child(3){
     height: 50%;
 }
-.qgLeftDivSmallHeading{
+.smallHeading{
     display: flex;
     gap: 10px;
     font-size: 24px;
@@ -67,17 +71,19 @@ div{
 /* .qgLeftDivSmallHeading>div{
     border:none;
 } */
-.qgLeftDivSmallHeading>div:nth-child(3){
+.smallHeading>div:nth-child(3){
     font-size: 18px;
     color: darkslateblue;
     font-weight: bold;
     cursor: pointer;
 }
-.qgLeftDisplayprods{
+.displayProds{
     display: flex;
     gap: 10px;
     align-items: center;
+    border-bottom: 8px solid lavender;
 }
+
 .qgleftprodsouterDiv{
     display: flex;
     gap: 10px;
@@ -86,6 +92,7 @@ div{
 }
 .qgLeftprods>img{
     height: 100px;
+    border: 1px solid #dcdcdc;
 }
 #qglpd3{
     display: grid;
@@ -110,79 +117,63 @@ button>img{
     height: 80%;
 }
 #phonesDisplayBigDiv{
-    height: 900px;
+    height: auto;
     width: 98%;
     margin: auto;
     display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3,1fr);
     grid-gap: 5px;
 }
-#bigDescriptionDiv{
-    width: 98%;
-    margin: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 70% 30%;
+
+
+.showPhonesDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    overflow-x: hidden;
+    gap: 10px;
 }
-#bdLeft p{
-    text-align: justify;
-    padding: 15px;
-    margin-top: 0;
+.phoneDisp{
+    /* height: 100%; */
+    width: 300px;
+    box-sizing: border-box;
 }
-#bdLeft table, td,th{
-    border: 1px solid black;
-    border-collapse: collapse;
+.imgdiv{
+    width: 300px;
+    display: flex;
+    justify-content: center;
 }
-#bdLeft>table{
-    width: 60%;
-    margin: auto;
+.phoneDisp img{
+    width: 200px;
 }
-#bdLeft>table th,td{
+.phoneDisp p{
+    color: grey;
+    padding: 1px 10px;
+}
+.linethrough{
+    text-decoration: line-through;
+}
+.phoneDisp .price{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.phoneDisp h3{
+    color: blue;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
     padding: 10px;
 }
-#bdLeft h3{
-    margin: 10px;
-}
-#bdLeft>ul, ol{
-    margin-left: 30px;
-}
-#bdLeft>ul>li, ol>li>ul>li{
-    list-style-type: none;
-    
-}
-.liMark{
-    margin: 0 10px;
-    font-size: 20px;
-}
-.red{
-    color: red;
-    cursor: pointer;
+.offersavail{
+    color: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 40px;
+    font-size: 12px;
+    padding: 2px 8px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 5px;
 }
 
-
-
-
-#bdRight>table{
-    width: 98%;
-    margin: auto;
-    margin-top: 14px;
-    border: 1px solid grey;
-    border-collapse: collapse;
-    font-family: Roboto,"system-ui",sans-serif;
-    font-size: 15px;
-}
-#bdRight thead{
-    background-color: #dcdcdc;
-}
-#bdRight td, th{
-    border: 1px solid grey;
-    text-align: center;
-    padding: 5px;
-}
-#bdRight>table [colspan = "3"]{
-    text-align: center;
-}
-.linkify{
-    color: blue;
-    cursor: pointer;
-}

@@ -32,6 +32,24 @@ document.getElementById("scrollleftbtn3").addEventListener("click",()=>{
 document.getElementById("scrollrightbtn3").addEventListener("click",()=>{
   scroll("qglpd3","right")
 })
+document.getElementById("scrollleftbtn4").addEventListener("click",()=>{
+  scroll("pdbdd1","left")
+})
+document.getElementById("scrollrightbtn4").addEventListener("click",()=>{
+  scroll("pdbdd1","right")
+})
+document.getElementById("scrollleftbtn5").addEventListener("click",()=>{
+  scroll("pdbdd2","left")
+})
+document.getElementById("scrollrightbtn5").addEventListener("click",()=>{
+  scroll("pdbdd2","right")
+})
+document.getElementById("scrollleftbtn6").addEventListener("click",()=>{
+  scroll("pdbdd3","left")
+})
+document.getElementById("scrollrightbtn6").addEventListener("click",()=>{
+  scroll("pdbdd3","right")
+})
 function scroll(id,direction){
   let cont = document.getElementById(id);
   if(direction == "left"){
@@ -58,27 +76,3 @@ function scroll(id,direction){
   
 }
 
-
-/*
-<div id="browser">
-  <a href="#" id="left-button"><img src="left-button.jpg" /></a>
-  <div id="content">
-      <img src="thumb_1.jpg" />
-      <img src="thumb_2.jpg" />
-      <img src="thumb_3.jpg" /> 
-      <img src="thumb_4.jpg" />
-      <img src="thumb_5.jpg" />
-      <img src="thumb_6.jpg" />
-  </div>
-  <a href="#" id="right-button"><img src="right-button.jpg" /></a>
-</div>
-
-<script>
-   $('#right-button').click(function() {
-      event.preventDefault();
-      $('#content').animate({
-        marginLeft: "-=200px"
-      }, "fast");
-   });
-</script>
-*/
