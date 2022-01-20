@@ -15,6 +15,7 @@
     />
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>Document</title>
+    <link rel="shortcut icon" type="image" href="/reliance.jpg">
   </head>
   <body>
     <div id="header"></div>
@@ -26,17 +27,25 @@
         <label>Mobiles & Tablets</label>
         <label>></label>
         <label>Smart Phones</label>
-        <lable id="brandNamesc"></lable>
-        <label id="deviceNamesc"></label>
+        <label>></label>
+        <lable id="brandNamesc" class="brandNamesc"></lable>
+        <label>></label>
+        <label id="deviceNamesc" class="deviceNamesc"></label>
       </div>
       <!-- section name bar code ends -->
 
       <!-- code for Mobile images start -->
       <div id="mobDetailsBox">
-        <div id="mobileImages"></div>
+        <div id="mobileImages">
+            <div id="deviceimage" class="deviceimage">
+                <img id="myimage" class="myimage" src="" alt="">
+            </div>
+        </div>
+
+
         <div id="detailsDiv">
           <p id="articleID">Article ID: 491996840</p>
-          <p id="deviceName">OnePlus Nord CE 5G 256 GB, 12 GB RAM</p>
+          <p id="deviceName"></p>
           <label class="container">
             <input type="checkbox" />
             <span class="checkmark"></span>
@@ -122,10 +131,10 @@
                 </p>
                 <p id="addWaranty">Key Features</p>
                 <ul id="keyFeatures">
-                  <li>16.33 cm (6.43 inches) display, 4500 mAh battery</li>
-                  <li>16 MP (f/2.45) selfie camera</li>
-                  <li>Qualcomm Snapdragon 750G 5G processor</li>
-                  <li>Oxygen OS 11 operating system</li>
+                  <li id="display"></li>
+                  <li id="camera"></li>
+                  <li id="processor"></li>
+                  <li id="ossystem"></li>
                 </ul>
                 <p id="addWaranty">
                   Got Feedback to share on this page?
@@ -137,7 +146,7 @@
             </div>
 
             <div id="mrpDiv">
-              <p id="mrp">MRP: <span id="price"> ₹27,999.00</span></p>
+              <p id="mrp">MRP: <span id="price">₹<span id="mainPrice"></span><span>.00</span></p>
               <p id="EMIs">
                 EMIs (Credit Cards) from ₹1318.01/month <span>|</span>
                 <span id="viewPlans">View Plans</span>
@@ -175,11 +184,11 @@
                       <p id="lillustrationimg">* This Android Smartphone image is for illustration purpose only. Actual image may vary.</p>
                   </div>
                   <p id="blktext">Warp Charge 30T Plus + 4500mAh¹ battery</p>
-                  <p id="blktext">64 MP triple camera</p>
+                  <p id="cameras" class="blktext">64 MP triple camera</p>
                   <p id="blktext">90 Hz AMOLED display</p>
-                  <p id="blktext">Snapdragon 750G 5G</p>
+                  <p id="processors" class="blktext" ></p>
                   <p id="blktext">5G-ready</p>
-                  <p id="blktext">OxygenOS</p>
+                  <p id="ossystems" class="blktext"></p>
                   <p id="blktext">NORD TO THE CORE</p>
                   <div id="imgTwo">
                     <img src="https://www.reliancedigital.in/medias/OnePlus-Nord-CE-5G-Smartphone-24?context=bWFzdGVyfGltYWdlc3w1NDIxfGltYWdlL2pwZWd8aW1hZ2VzL2hhZC9oYTYvOTU2ODczODYzOTkwMi5qcGd8MzFlZTcyY2YwZDIxMDY5NDljYjE5NGE1ODYxYmI5YmNiY2JiYmNmNmFlNGJkNmFlMzgxMzgzYzg5ZWVlMGY1MQ" alt="">
@@ -357,7 +366,7 @@
                   <p id="lillustrationimg">* This Android Smartphone image is for illustration purpose only. Actual image may vary.</p>
 
                   <p id="blktext">NEW FEATURES BY THE HANDFUL</p>
-                  <p id="blktext">OxygenOS 11</p>
+                  <p id="ossystemss" class="blktext"></p>
                   <p>Nord CE 5G runs on OxygenOS experience based on Android 11 and introduces a bunch of new features.</p>
 
                   <div id="imgTwentysix">
@@ -414,10 +423,10 @@
     
             <div id="valueDiv">
                 <div id="value">
-                    <p>Silver Ray</p>
+                    <p id="color"></p>
                     <p>Android</p>
                     <p>Smartphone</p>
-                    <p>One Plus</p>
+                    <p id="brand">One Plus</p>
                 </div>
             </div>
         </div>
@@ -433,8 +442,8 @@
     
             <div id="valueDiv">
                 <div id="value">
-                    <p>256 GB</p>
-                    <p>Qualcomm Snapdragon 750G 5G</p>
+                    <p id="memory"></p>
+                    <p id="processordet"></p>
                 </div>
             </div>
         </div>
@@ -479,7 +488,7 @@
     
             <div id="valueDiv">
                 <div id="value">
-                    <p>Oxygen OS 11</p>
+                    <p id="osdet"></p>
                 </div>
             </div>
         </div>
@@ -574,7 +583,7 @@
     
             <div id="valueDiv">
                 <div id="value">
-                    <p>12 GB</p>
+                    <p id="ram"></p>
                 </div>
             </div>
         </div>
@@ -636,54 +645,66 @@
             </div>
         </div>
 
-        
 
-
-        
-        <!-- <div id="gInfoDiv">
-          
-          
+        <p id="detailblktext">Manufacturing & Packing Information</p>
+        <div id="details">
+            <div id="keyDiv">
+                <div id="key">
+                    <p>Customer care address</p>
+                    <p id="ccphone">Customer care Phone</p>
+                    <p id="lesslinegap">Customer care email</p>
+                    <p>Country of origin</p>
+                    <p>Name and address of Manufacturer</p>
+                    <p id="adrsimporter">Name and address of Importer</p>
+                    <p id="lesslinegaped">Name of Seller</p>
+                    <p id="lesslinegaped">Month and Year of Commodity First Manufactured/Imported/Packed</p>
+                    <p id="lesslinegaped">Commodity name</p>
+                    <p id="lesslinegaped">Item Width</p>
+                    <p id="lesslinegaped">Item Height</p>
+                    <p id="lesslinegaped">Item Length</p>
+                    <p id="lesslinegaped">Net Quantity</p>
+                    <p id="lesslinegaped">Net Weight</p>
+                </div>
+            </div>
+    
+            <div id="valueDiv">
+                <div id="value">
+                    <p id="lesslinegap">Reliance Digital, Reliance Retail Limited, 3rd Floor, Court House, Lokmanya Tilak Marg, Dhobi Talao,</p>
+                    <p id="lesslinegap">Mumbai-400 002, Maharashtra, India.</p>
+                    <p id="lesslinegap">1800-889-1055</p>
+                    <p id="lesslinegap">reliancedigital@ril.com</p>
+                    <p>India</p>
+                    <p id="lesslinegapE">OPPO Mobiles India Private Limited Add: Plot NO.1, Sector-Ecotech-VII, Greater Noida Industrial</p>
+                    <p id="lesslinegap">Development area, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh -201306 India, OPPO</p>
+                    <p id="lesslinegap">Mobiles India Private Limited Add: Plot NO.1, Sector-Ecotech-VII, Greater Noida Industrial</p>
+                    <p id="lesslinegap">Development area, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh -201306 India</p>
+                    <p>OPPO MOBILE INDIA PRIVATE LIMITED, Plot no1, Sector Ecotech - 5, Greater Noida, Uttar Pradesh -</p>
+                    <p id="lesslinegap">201306, India.</p>
+                    <p id="lesslinegap">Reliance Retail Ltd.</p>
+                    <p id="lesslinegap">June' 2021</p>
+                    <p id="lesslinegap">Mobile Phone</p>
+                    <p id="lesslinegap">7.35 cm</p>
+                    <p id="lesslinegap">0.79 cm</p>
+                    <p id="lesslinegap">15.92 cm</p>
+                    <p id="lesslinegap">1N</p>
+                    <p id="lesslinegap">612.5 gram</p>
+                </div>
+            </div>
         </div>
 
-        <p id="detailblktext">Phone Hardware & Storage</p>
-        <div id="gInfoDiv">
-          <div id="key">
-              <p>Internal Storage</p>
-              <p>Processor</p>
-          </div>
-          <div id="value">
-              <p>256 GB</p>
-              <p>Qualcomm Snapdragon 750G 5G</p>
-          </div>
-        </div>
+      </div>
 
-        <p id="detailblktext">Phone Network & Inter-device Connectivity</p>
-        <div id="gInfoDiv">
-          <div id="key"></div>
-          <div id="value"></div>
-        </div>
+      <hr id="hline2"> 
 
-        <p id="detailblktext">Phone OS</p>
-        <div id="gInfoDiv">
-          <div id="key"></div>
-          <div id="value"></div>
-        </div>
-
-        <p id="detailblktext">Network & Inter-device Connectivity</p>
-        <div id="gInfoDiv">
-          <div id="key"></div>
-          <div id="value"></div>
-        </div> -->
-
-
-
-
-
-
-
-
+      <!-- customer review section code -->
+      <div id="customerRev">
+          <p id="cstrevtag">Customer Reviews</p>
+          <button id="writerevbtn">WRITE A PRODUCT REVIEW</button>
       </div>
     </div>
     <div id="footer"></div>
   </body>
 </html>
+<script type="module" src="./scripts/indiprductpage.js">
+
+</script>
