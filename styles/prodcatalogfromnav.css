@@ -104,9 +104,17 @@ body{
     width: 100%;
     height: 100%;
 }
+.leftbtn>button,.rightbtn>button{
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.rightbtn{
+    margin-left: 8px;
+}
 button>img{
     width: 40px;
-    padding: 20px 10px;
+    padding: 10px 0px;
 }
 #qgRight>div{
     height: 25%;
@@ -177,3 +185,79 @@ button>img{
     margin: 5px;
 }
 
+
+@media screen and (min-width:480px) and (max-width:1000px){
+    #topCarasoul{
+        height: fit-content;
+        width: 98%;
+        margin: auto;
+    
+    }
+    #quickGlance{
+        display: block;
+        height: auto;
+        width: 98%;
+    }
+    quickGlance>div:nth-child(1){
+        width: 98%;
+        margin: auto;
+    }
+    #quickGlance>div:nth-child(2){
+        width: 80%;
+    }
+    #qglpd3 img{
+        width: 70%;
+        height: 100%;
+    }
+    .smallHeading{
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        align-items: baseline;
+        padding: 5px;
+    }
+    .smallHeading>div:nth-child(3){
+        font-size: 14px;
+    }
+    #phonesDisplayBigDiv{
+        width: 80%;
+        margin: 1%;
+    }
+    .phoneDisp img{
+        width: 100px;
+    }
+    .phoneDisp p{
+        padding: 1px 5px;
+        font-size: 12px;
+    }
+    .phoneDisp h3{
+        color: blue;
+        font-size: 14px;
+        font-weight: 300;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .phoneDisp .price{
+        font-size: 14px;
+    }
+    .offersavail{
+        
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:480px){
+    #quickGlance{
+        display: block;
+        height: auto;
+        width: 98%;
+    }
+    quickGlance>div:nth-child(1){
+        width: 98%;
+        margin: auto;
+    }
+    #quickGlance>div:nth-child(2){
+        width: 98%;
+        margin: auto;
+    }
+}
