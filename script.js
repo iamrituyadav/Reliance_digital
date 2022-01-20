@@ -22,7 +22,7 @@ async function addProduct() {
     //   id: pdata.products.length,
       name: document.querySelector("#name").value,
       image: document.querySelector("#image").value,
-      price: document.querySelector("#price").value,
+      price: +document.querySelector("#price").value,
       brand: document.querySelector("#brand").value,
       color: document.querySelector("#color").value,
       memory: document.querySelector("#memory").value,
