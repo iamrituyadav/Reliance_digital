@@ -588,9 +588,53 @@ body {
     }
     #hline2{
       border: none;
-        border-bottom: 1px solid #ddd;
-        margin-top: 50px;
-        margin-bottom: 0px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+
+    /* specification detailed code start here */
+    #leftmarginspecdiv{
+        margin-left: 20px;
+        border: 1px solid red;
+        
+    }
+     
+    #gInfoDiv{
+      display: flex;  
+
+    }
+    #detailblktext{
+        font-size: 17px;
+        font-weight: bold;
+        color: #575757;
+        
+    }
+    #details{
+        display: flex;
+        border: 1px solid green;
+    }
+    #key{
+        border: 1px solid red;
+        width: 790px;
+        color: #575757;
+        font-size: 17px;
+        line-height: 18px;
+
+    }
+    #value{
+        border: 1px solid black;
+        /* margin-left: 750px; */
+        color: #575757;
+        line-height: 18px;
+        font-size: 17px;
+    }
+    #lesslinegap{
+        line-height: 5px;
+    }
+    #wrntyGap{
+        margin-top: 40px;
     }
   
     
