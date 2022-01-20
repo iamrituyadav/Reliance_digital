@@ -155,6 +155,9 @@ button>img{
 .phoneDisp img{
     width: 200px;
 }
+.phoneDisp img:hover{
+    cursor: pointer;
+}
 .phoneDisp p{
     color: grey;
     padding: 1px 10px;
