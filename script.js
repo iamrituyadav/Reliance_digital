@@ -27,6 +27,11 @@ async function addProduct() {
       color: document.querySelector("#color").value,
       memory: document.querySelector("#memory").value,
       ram: document.querySelector("#ram").value,
+      display: document.querySelector("#display").value,
+      camera: document.querySelector("#camera").value,
+      processor: document.querySelector("#processor").value,
+      ossystem: document.querySelector("#ossystem").value,
+
     };
     let data = JSON.stringify(product);
     let response = await fetch("http://127.0.0.1:3000/api/products", {
