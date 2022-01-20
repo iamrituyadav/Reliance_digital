@@ -76,3 +76,10 @@ function scroll(id,direction){
   
 }
 
+
+function selectProduct(id){
+  localStorage.setItem("selected_product",JSON.stringify(id));
+  window.location.href = "./indiprductpage.html"
+
+}
+
