@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/prodcatalogfromnav.css">
     <link rel="stylesheet" href="./styles/productCatalogBottom.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Buy Smartphones Online at Best Prices</title>
 </head>
 <body>
@@ -168,7 +169,7 @@
                 <span>FROM OUR RESOURCE CENTER</span>
                 <div>
                     <h3>Vivo V23 and V23 Pro – A new year, a new beginning</h3>
-                    <img src="https://www.reliancedigital.in/wp-content/uploads/2022/01/Vivi_V23_Cover.jpg" alt="">
+                    <img src="https://i.cdn.newsbytesapp.com/images/l242_48351641370148.jpg" alt="">
                 </div>
                 <div>
                     <h3>Samsung Galaxy M52 5G – High-end smartphone traits</h3>
@@ -519,7 +520,7 @@
         
 
     </div>
-    <div id="footer"></div>
+    <footer></footer>
 </body>
 </html>
 
@@ -527,4 +528,7 @@
 <script type="module">
     import mobileDescriptions from "./components/prodCatalogbottom.js"
     document.querySelector("#bottomsection").innerHTML = mobileDescriptions();
+
+    import {footer} from './components/header_footer.js'
+    document.querySelector("footer").innerHTML = footer()
 </script>
