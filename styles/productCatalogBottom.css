@@ -67,3 +67,36 @@
     color: blue;
     cursor: pointer;
 }
+@media screen and (min-width:480px) and (max-width:1000px) {
+    #bigDescriptionDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 75%;
+    }
+    #bdLeft>table{
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+@media screen and (min-width:0px) and (max-width:480px) {
+    #bigDescriptionDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 75%;
+    }
+    #bdLeft>table{
+        width: 90%;
+        margin: auto;
+    }
+    #bdLeft p{
+        text-align: justify;
+        padding: 10px;
+        font-size: 14px;
+    }
+    #bdLeft>table th,td{
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+}
