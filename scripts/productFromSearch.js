@@ -14,6 +14,7 @@ function showData(item, location) {
   location.innerHTML = null;
   //   console.log("item:", item);
   item.forEach(function (element) {
+    var mainDiv = document.createElement("div");
     var div = document.createElement("div");
     div.addEventListener("click", function () {
       let obj = {
@@ -22,16 +23,38 @@ function showData(item, location) {
 
       localStorage.setItem("selected_product", JSON.stringify(obj));
 
-      window.location.href = "#";
+      window.location.href = "indiprductpage.html";
     });
+
+    var descDiv = document.createElement("div");
     var img = document.createElement("img");
     img.src = element.image;
     var name = document.createElement("p");
     name.innerText = element.name;
     var price = document.createElement("p");
     price.innerText = "Price: Rs. " + element.price;
-    div.append(img, name, price);
-    location.append(div);
+    descDiv.append(name, price);
+
+    var childDiv = document.createElement("div");
+    var childDiv1 = document.createElement("div");
+    var compare = document.createElement("p");
+    compare.innerText = "Compare";
+    var p1 = document.createElement("p");
+    // rectIcon.setAttribute("class", "far fa-square");
+    p1.innerHTML = '<i class="far fa-square"></i>';
+    childDiv1.append(p1, compare);
+
+    var childDiv2 = document.createElement("div");
+    var wishlist = document.createElement("p");
+    wishlist.innerText = "Wishlist";
+    var p2 = document.createElement("p");
+    p2.innerHTML = '<i class="far fa-heart" aria-hidden="true"></i>';
+    childDiv2.append(p2, wishlist);
+
+    childDiv.append(childDiv1, childDiv2);
+    div.append(img, descDiv);
+    mainDiv.append(div, childDiv);
+    location.append(mainDiv);
   });
 }
 // carausal start
