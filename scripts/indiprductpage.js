@@ -1,4 +1,7 @@
+
+
 // let res = await fetch("http://127.0.0.1:3000/api/products/3");
+
 // let prod = await res.json();
 // console.log(prod);
 
@@ -12,6 +15,10 @@ let res = await fetch(`http://127.0.0.1:3000/api/products/${check.id}`);
 let temp = await res.json();
 //Page Tiltle dynamic
 document.title = 'Buy'+" "+temp.name
+
+//trial
+
+//trial
 
 //sectionbar names
 let scbrand = document.getElementById('brandNamesc')
@@ -57,4 +64,24 @@ let osdet = document.getElementById('osdet')
 osdet.innerText = temp.ossystem 
 let ram = document.getElementById('ram')
 ram.innerText = temp.ram 
+
+
+//code for changing mobile images on click
+const allImage = document.querySelectorAll('.smallimgDiv div img')
+
+const imgContain = document.querySelector('.deviceimage');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allImage[0].parentElement.classList.add('active');
+})
+
+allImage.forEach((image) => {
+    image.addEventListener('click', () =>{
+        console.log(image.src)
+        imgContain.querySelector('img').src = image.src;
+    });
+});
+
+
+    
 
