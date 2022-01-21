@@ -40,3 +40,4 @@ setInterval(function(){
     div7img.src = div7image[div7i];
     div7i++;
 },1000);
+
