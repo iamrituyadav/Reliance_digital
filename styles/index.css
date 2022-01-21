@@ -383,7 +383,10 @@
   }
   .left-image .grid2 > div:first-child {
     margin: auto;
-    width: 200px;
+    width: 100%;
+  }
+  .left-image .grid2 > div:first-child > img {
+    width: 100%;
   }
   .left-image .flex {
     width: 98%;
@@ -395,7 +398,7 @@
   }
 
   .left-image .flex > div img {
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
   }
 }
