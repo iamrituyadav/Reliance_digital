@@ -38,7 +38,7 @@ body {
       height: 800px;
   }
   #mobileImages{
-      border: 1px solid red;
+      border: 1px solid white;
       width: 830px;
       height: 660px;
       padding: 0px 15px;
@@ -51,8 +51,65 @@ body {
   .myimage{
       height: 100%;
   }
+  .smallimgDiv{
+      border: 1px solid white;
+      height: 120px;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+  }
+  .prev{
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(168, 167, 167, 0.527) ;
+    padding: 32px 8px;
+    font-size: 32px;
+    color: black;
+    
+  }
+  #img1{
+    /* border: 1px solid #FFFFFF; */
+    width: 183px;
+    height: 98px;
+    cursor: pointer;
+    /* margin-left: 1px; */
+  }
+  .smallimgDiv div img{
+    width: 50;
+    height: 100%;
+  }
+  .smallimgDiv div{
+    text-align: center;
+  }
+  
+  .next{
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(168, 167, 167, 0.527) ;
+    padding: 32px 8px;
+    font-size: 32px;
+    color: black;
+  }
+  #test{
+    border: 1px solid white;
+    width: 130px;
+    height: 80px;
+    text-align: center;
+    margin-top: 1px;
+    border-right:1px solid #ddd;
+  }
+  #playbtn{
+    width:40px;
+    margin-top: 9px;
+    /* border: 1px solid red; */
+  }
+  #vslide{
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+  }
   #detailsDiv{
-      border: 1px solid green;
+      border: 1px solid white;
       width: 1227px;
       height: 94%;
       padding: 0px 20px;
@@ -269,6 +326,10 @@ body {
         margin-top: 15px;
         
     }
+    #addtoCart:hover{
+      background-color: #1F4985;
+      cursor: pointer;
+    }
     #buyNow{
       padding: 16px 85px;
       background-color: #FC6027;
@@ -279,6 +340,7 @@ body {
       font-size: 18px;
       margin-top: 15px;
       margin-left: 15px;
+      cursor: pointer;
     }
     #butDiv{
       display: flex;
@@ -607,6 +669,42 @@ body {
       margin-bottom: 0px;
     }
 
+    /* side offer bar */
+    #otherOffers{
+      border: 1px solid white;
+    }
+    #offertitle{
+      padding: 12px 16px;
+      background-color: #EFEFEF;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      color: #333333;
+      letter-spacing: 1px;
+      word-spacing: 1.5px;
+    }
+    #offersrand{
+      border: 1px solid #EFEFEF;
+      margin-top: 10px;
+      padding: 0px 25px 25px;
+      
+    }
+    #adjoffimg{
+      text-align: center;
+    }
+    #greytext{
+      color: #666666;
+      line-height: 5px;
+    }
+    #bigbcktxt{
+      font-size: 18px;
+      color: #000000;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    #dashtxt{
+      text-decoration:line-through;
+    }
 
     /* specification detailed code start here */
     #leftmarginspecdiv{
