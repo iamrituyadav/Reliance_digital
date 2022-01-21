@@ -1,69 +1,120 @@
-#bigDescriptionDiv{
-    width: 98%;
+#bigDescriptionDiv {
+  width: 98%;
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  #bigDescriptionDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bdLeft > table {
+    min-width: 300px;
     margin: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-#bdLeft p{
-    text-align: justify;
-    padding: 15px;
-    margin-top: 0;
-}
-#bdLeft table, td,th{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-#bdLeft>table{
-    width: 60%;
+  }
+
+  #bdLeft {
     margin: auto;
+  }
 }
-#bdLeft>table th,td{
-    padding: 10px;
+#bdLeft p {
+  text-align: justify;
+  padding: 15px;
+  margin-top: 0;
 }
-#bdLeft h3{
-    margin: 10px;
+#bdLeft table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-#bdLeft>ul, ol{
-    margin-left: 30px;
+#bdLeft > table {
+  width: 60%;
+  margin: auto;
 }
-#bdLeft>ul>li, ol>li>ul>li{
-    list-style-type: none;
+#bdLeft > table th,
+td {
+  padding: 10px;
+}
+#bdLeft h3 {
+  margin: 10px;
+}
+#bdLeft > ul,
+ol {
+  margin-left: 30px;
+}
+#bdLeft > ul > li,
+ol > li > ul > li {
+  list-style-type: none;
+}
+.liMark {
+  margin: 0 10px;
+  font-size: 20px;
+}
+.red {
+  color: red;
+  cursor: pointer;
+}
+
+#bdRight > table {
+  width: 98%;
+  margin: auto;
+  margin-top: 14px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  font-family: Roboto, "system-ui", sans-serif;
+  font-size: 15px;
+}
+#bdRight thead {
+  background-color: #dcdcdc;
+}
+#bdRight td,
+th {
+  border: 1px solid grey;
+  text-align: center;
+  padding: 5px;
+}
+#bdRight > table [colspan="3"] {
+  text-align: center;
+}
+.linkify {
+  color: blue;
+  cursor: pointer;
+}
+@media screen and (min-width:480px) and (max-width:1000px) {
+    #bigDescriptionDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 75%;
+    }
+    #bdLeft>table{
+        width: 90%;
+        margin: auto;
+    }
     
 }
-.liMark{
-    margin: 0 10px;
-    font-size: 20px;
-}
-.red{
-    color: red;
-    cursor: pointer;
-}
-
-
-
-
-#bdRight>table{
-    width: 98%;
-    margin: auto;
-    margin-top: 14px;
-    border: 1px solid grey;
-    border-collapse: collapse;
-    font-family: Roboto,"system-ui",sans-serif;
-    font-size: 15px;
-}
-#bdRight thead{
-    background-color: #dcdcdc;
-}
-#bdRight td, th{
-    border: 1px solid grey;
-    text-align: center;
-    padding: 5px;
-}
-#bdRight>table [colspan = "3"]{
-    text-align: center;
-}
-.linkify{
-    color: blue;
-    cursor: pointer;
+@media screen and (min-width:0px) and (max-width:480px) {
+    #bigDescriptionDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 75%;
+    }
+    #bdLeft>table{
+        width: 90%;
+        margin: auto;
+    }
+    #bdLeft p{
+        text-align: justify;
+        padding: 10px;
+        font-size: 14px;
+    }
+    #bdLeft>table th,td{
+        padding: 5px;
+        font-size: 14px;
+    }
+    
 }
