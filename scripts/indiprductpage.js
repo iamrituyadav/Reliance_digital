@@ -11,8 +11,22 @@
 
 let check = JSON.parse(localStorage.getItem("selected_product"))
 
-let res = await fetch(`http://127.0.0.1:3000/api/products/${check.id}`);
+let res = await fetch(`http://127.0.0.1:3000/api/products/${check}`);
 let temp = await res.json();
+
+
+//setting data in local storage for cart
+var prodData={
+    name:temp.name,
+    image: temp.image,
+    price:temp.price
+}
+
+document.getElementById("addtoCart").addEventListener("click", function() {
+    console.log("Yes");
+    localStorage.setItem("relianceCart",JSON.stringify(prodData));
+  });
+
 //Page Tiltle dynamic
 document.title = 'Buy'+" "+temp.name
 
