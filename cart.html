@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reliance Digital Cart</title>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <style>
         #count{
             display: flex;
@@ -29,6 +31,7 @@
     </style>
 </head>
 <body>
+    <div id="container"></div>
     <div id="cart">
         <div id="count">
             <h4>My Cart</h4>
@@ -42,7 +45,8 @@
 
         <div id="checkout">
             <div id="btn">
-                <button id="chkt">CHECKOUT</button>
+                <a href="./payment.html"><button id="chkt">CHECKOUT</button></a>
+                
                 <div id="details">
                     <input type="text" id="Coupon" placeholder="Coupon Code">
                     <button>Apply</button>
@@ -59,7 +63,37 @@
             </div>
         </div>
     </div>
+
+
+    <footer></footer>
 </body>
 </html>
-<script>
+
+<script type="module">
+
+    import {footer,header} from "./components/header_footer.js"
+    let container=document.getElementById("container")
+    container.innerHTML=header()
+    let foot=document.querySelector("footer")
+    foot.innerHTML=footer()
+
+    import headerFunctionality from "./scripts/header.js"
+headerFunctionality();
+
+let items=JSON.parse(localStorage.getItem("relianceCart"))
+
+// function appendcart(relianceCart){
+//     relianceCart.forEach((el)=>{
+//         let div=document.createElement("div")
+//         let img=document.createElement("img")
+//         img.src=el.
+//         let price=document.createElement("p")
+//     })
+// }
+
+
+
+
+
+    
 </script>

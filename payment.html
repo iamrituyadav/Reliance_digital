@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <style>
       .collapsible {
         
@@ -35,9 +37,17 @@
         .content p{
             text-align: center;
         }
+        #paym{
+            display: flex;
+        }
+        input{
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
+
+    <div id="container"></div>
 
     <button class="collapsible">DELIVERY METHOD</button>
     <div class="content">
@@ -83,44 +93,63 @@
          
         <div id="payoption">
 
-            <div>
+            <div id="paym">
+
                 <div>
-                    <input type="checkbox" id="">
-                    Credit Card
+                    <div>
+                        <input type="checkbox" id="">
+                        Credit Card
+                    </div>
+                    <div>
+                        <input type="checkbox" id="">
+                        Debit Card
+                    </div>
+                    <div>
+                        <input type="checkbox" id="">
+                        Credit Card EMI
+                    </div>
+                    <div>
+                        <input type="checkbox" id="">
+                        Net Banking
+                    </div>
+                    <div>
+                        <input type="checkbox" id="">
+                        UPI
+                    </div>
+                    <div>
+                        <input type="checkbox" id="">
+                        Wallet
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" id="">
-                    Debit Card
-                </div>
-                <div>
-                    <input type="checkbox" id="">
-                    Credit Card EMI
-                </div>
-                <div>
-                    <input type="checkbox" id="">
-                    Net Banking
-                </div>
-                <div>
-                    <input type="checkbox" id="">
-                    UPI
-                </div>
-                <div>
-                    <input type="checkbox" id="">
-                    Wallet
+    
+                <div id="carddetails">
+                    <input type="number" placeholder="Enter card number"><br>
+                    <input type="number" placeholder="Enter CVV"><br>
+                    <input type="month" >
                 </div>
             </div>
+            
 
             <div>
                 <h1>Payment Option</h1>
-                <button>PAY RS. ......</button>
+                <button id="pay">PAY RS. ......</button>
             </div>
 
         </div>
     </div>
+
+    <footer></footer>
 </body>
 </html>
 
-<script>
+<script type="module">
+
+import {footer,header} from "./components/header_footer.js"
+    let container=document.getElementById("container")
+    container.innerHTML=header()
+    let foot=document.querySelector("footer")
+    foot.innerHTML=footer()
+
     var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -135,4 +164,11 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+let pay=document.getElementById("pay")
+pay.addEventListener("click",pop)
+function pop(){
+    alert("Pay Success")
+}
+
 </script>

@@ -40,7 +40,7 @@ document.querySelector("#popupdiv").addEventListener("mouseleave",()=>{
 //Search functionality
 
 document.querySelector("#searchbtn").addEventListener("click",()=>{
-    let terms = ["phone","smartphone","mobile","vivo","oppo","iphone","samsung","realme","redmi"]
+    let terms = ["phone","smartphone","mobile","vivo","oppo","iphone","samsung","realme","redmi","apple","oneplus"]
     let searched_term = document.querySelector("#q").value;
     searched_term = searched_term.toLowerCase()
     let term_found = false;
