@@ -43,6 +43,10 @@
         input{
             margin: 10px;
         }
+        #pay{
+            width: 60%;
+            height: 60px;
+        }
     </style>
 </head>
 <body>
@@ -77,11 +81,11 @@
     </div>
 
 
-    <button class="collapsible">ORDER DETAILS</button>
+    <!-- <button class="collapsible">ORDER DETAILS</button>
     <div class="content">
 
         <button>PROCEED TO PAYMENT</button>
-    </div>
+    </div> -->
 
 
     <button class="collapsible">PAY SECURELY</button>
@@ -94,8 +98,9 @@
         <p>Applicable for orders lesser than Rs. 20,000. Pay later with Simpl & avail 10% cashback.  T&C</p>
          
         <div id="payoption">
-
+            <h1>Payment Option</h1>
             <div id="paym">
+                
 
                 <div>
                     <div>
@@ -133,8 +138,9 @@
             
 
             <div>
-                <h1>Payment Option</h1>
-                <button id="pay">PAY RS. ......</button>
+                
+                <button id="pay"> ......</button>
+
             </div>
 
         </div>
@@ -167,10 +173,16 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+let items=JSON.parse(localStorage.getItem("relianceCart"))
+
+
 let pay=document.getElementById("pay")
+pay.innerText="PAY RS."+items.price
 pay.addEventListener("click",pop)
 function pop(){
-    alert("Pay Success")
+    alert("Pay Success\n your order will be delivered\n thank you!!!")
+    
 }
 
 </script>
