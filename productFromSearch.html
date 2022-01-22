@@ -17,8 +17,10 @@
       src="https://kit.fontawesome.com/ed7ed981e3.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./styles/header.css" />
   </head>
   <body>
+    <header></header>
     <div id="main">
       <div id="slideshow">
         <!-- carousal start -->
@@ -182,6 +184,10 @@
   import mobileDescriptions from "./components/prodCatalogbottom.js";
   document.querySelector("#bottomsection").innerHTML = mobileDescriptions();
 
+  import headerFunctionality from "./scripts/header.js";
+  import { header } from "./components/header_footer.js";
+  document.querySelector("header").innerHTML = header();
+  headerFunctionality();
   let url = "http://127.0.0.1:3000/api/products";
 
   let res = await addProducts(url);
@@ -315,7 +321,8 @@
         }
       }
     }
-    return filtered_products;
+    showData(filtered_products, container);
+    // return filtered_products;
     //Use this returned array and pass it into the display products funtion that you have. THe one that will append the data on the screen
   }
 </script>
