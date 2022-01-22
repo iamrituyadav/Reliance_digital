@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/indiprductpage.css" />
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <script
       src="https://kit.fontawesome.com/60d90b68f5.js"
       crossorigin="anonymous"
@@ -18,7 +20,7 @@
     <link rel="shortcut icon" type="image" href="/reliance.jpg">
   </head>
   <body>
-    <div id="header"></div>
+    <header></header>
     <div id="main">
       <!-- section name bar code starts -->
       <div id="sectionNameBar">
@@ -159,6 +161,7 @@
               </div>
             </div>
 
+            <!-- MRP section and shipping -->
             <div id="mrpDiv">
               <p id="mrp">MRP: <span id="price">₹<span id="mainPrice"></span><span>.00</span></p>
               <p id="EMIs">
@@ -168,14 +171,14 @@
               <p id="freeShip">FREE SHIPPING!</p>
               <i class="fas fa-map-marker-alt map"></i>
               <input type="text" placeholder="PIN Code" id="pinCode" /><br>
+              <p id="pinalert">Please enter a valid pincode</p>
               <div>
-                  <button id="addtoCart">ADD TO CART</button><a href="trial.html"><button id="buyNow">BUY NOW</button></a>
+                  <button id="addtoCart">ADD TO CART</button><button id="buyNow">BUY NOW</button>
               </div>
               
             </div>
           </div>
 
-          <!-- MRP section and shipping -->
           <div></div>
         </div>
       </div>
@@ -772,13 +775,46 @@
           <button id="writerevbtn">WRITE A PRODUCT REVIEW</button>
       </div>
     </div>
-    <div id="footer"></div>
+    <footer></footer>
   </body>
 </html>
-<script type="module" src="./scripts/indiprductpage.js">
+<script type="module" src="./scripts/indiprductpage.js"></script>
+<script type="module">
+
+import {footer, header} from './components/header_footer.js'
+document.querySelector("footer").innerHTML = footer()
+document.querySelector("header").innerHTML = header()
+
+import headerFunctionality from "./scripts/header.js"
+headerFunctionality()
+
+
 function openImg(){
     var image = document.getElementById('getsrc');
     var source = image.src;
     window.open(source);
 }
+
+
+document.getElementById("buyNow").addEventListener("click", function() {
+    
+    let pin = document.querySelector("#pinCode").value
+    
+    
+    if(pin.length === 6){
+      let pincheck = document.getElementById('pinalert')
+      pincheck.style.display = 'none'
+    }
+    else{
+      let pincheck = document.getElementById('pinalert')
+      pincheck.style.display = 'block'
+      
+    }
+  });
+
+
+
+  
+
+
 </script>
