@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Document</title>
 </head>
 <style>
@@ -54,10 +56,12 @@
         color:rgb(228,37,41);
         margin-left: 6px;
         font-weight: bolder;
+        text-decoration: none;
     }
 </style>
 
 <body>
+    <header></header>
     <div id="register">
        <p class="para">Register</p>
        <hr class="line">
@@ -78,10 +82,11 @@
        <button>Register</button>
        <div id="char">
            <p>Already Registered?</p>
-           <p class="login">Login</p>
+           <a href="login.html" class="login"><p >Login</p></a>
        </div>
        
     </div>
+    <footer></footer>
 </body>
 </html>
 <script>
@@ -108,4 +113,12 @@
       window.location.href="login.html";
 
   }
+</script>
+<script type="module">
+    import {header,footer} from "./components/header_footer.js"
+    document.querySelector("header").innerHTML=header();
+    document.querySelector("footer").innerHTML=footer();
+    import headerFunctionality from "./scripts/header.js"
+    headerFunctionality()
+
 </script>
