@@ -35,7 +35,7 @@
     <div id="cart">
         <div id="count">
             <h4>My Cart</h4>
-            <h4>No.of items</h4>
+            <h3>No.of items</h3>
         </div>
 
         <div id="items">
@@ -55,7 +55,7 @@
                     <p>Delivery Charges</p>
                     <p>Free</p>
                     <hr>
-                    <h4>AMOUNT PAYABLE</h4>  
+                    <h4 id="totamount">AMOUNT PAYABLE</h4>  
                 </div>
                 <div>
                     <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
@@ -82,14 +82,32 @@ headerFunctionality();
 
 let items=JSON.parse(localStorage.getItem("relianceCart"))
 
-// function appendcart(relianceCart){
-//     relianceCart.forEach((el)=>{
-//         let div=document.createElement("div")
-//         let img=document.createElement("img")
-//         img.src=el.
-//         let price=document.createElement("p")
-//     })
-// }
+let cartlength=document.querySelector("h3")
+h3.innerText=items.length;
+
+function appendcart(relianceCart){
+    relianceCart.forEach((el)=>{
+        let div=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=el.img
+        let name=document.createElement("p")
+        name.innerHTML=el.name
+        let price=document.createElement("p")
+        price.innerText=el.
+        let p=document.createElement("p")
+        p.innerText="*Delivery assurance is subject to our delivery locations staying open as per govt. regulations"
+        let btn=document.createElement("button")
+        btn.innerHTML="Remove";
+        let btn2=document.createElement("button")
+        btn2.innerHTML="Move to wishlist";
+
+        div.append(img,name,price,p,btn,btn2)
+
+    })
+}
+
+let amount=document.getElementById("totamount")
+amount.innerText=items.price
 
 
 
