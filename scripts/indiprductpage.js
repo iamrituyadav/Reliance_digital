@@ -14,7 +14,7 @@ let check = JSON.parse(localStorage.getItem("selected_product"))
 let res = await fetch(`http://127.0.0.1:3000/api/products/${check}`);
 let temp = await res.json();
 
-
+// let cart = JSON.parse(localStorage.getItem("relianceCart")) || []
 //setting data in local storage for cart
 var prodData={
     name:temp.name,
@@ -24,7 +24,10 @@ var prodData={
 
 document.getElementById("addtoCart").addEventListener("click", function() {
     console.log("Yes");
+    // cart.push(prodData)
     localStorage.setItem("relianceCart",JSON.stringify(prodData));
+    // window.location.href = "cart.html"
+    
   });
 
 //Page Tiltle dynamic
