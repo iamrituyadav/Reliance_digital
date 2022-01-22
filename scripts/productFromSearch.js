@@ -17,11 +17,8 @@ function showData(item, location) {
     var mainDiv = document.createElement("div");
     var div = document.createElement("div");
     div.addEventListener("click", function () {
-      let obj = {
-        id: element.id,
-      };
-
-      localStorage.setItem("selected_product", JSON.stringify(obj));
+      
+      localStorage.setItem("selected_product", JSON.stringify(element.id));
 
       window.location.href = "indiprductpage.html";
     });
