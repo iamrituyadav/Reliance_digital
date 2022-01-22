@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./styles/prodcatalogfromnav.css">
     <link rel="stylesheet" href="./styles/productCatalogBottom.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <title>Buy Smartphones Online at Best Prices</title>
 </head>
 <body>
-    <div id="header"></div>
+    <header></header>
     <div id="main">
         <div id="topCarasoul">
             <img id="carasolimg" src="https://www.reliancedigital.in/medias/Samsung-Galaxy-Z-Fold3-Flip3-5G-CLP-Banner-10-01-2022.jpg?context=bWFzdGVyfGltYWdlc3wxNjQxMjV8aW1hZ2UvanBlZ3xpbWFnZXMvaDFiL2g4NC85NzU0MDU2MTYzMzU4LmpwZ3xmMzk2ZWEzOWIwOTI2ODk1YjNiNzY1MGI2MDY5ZmJlODJmZTFlMGI4NjYwYjU1ZjE0OTg1YzczMTllYzhiMDk4" alt="">
@@ -525,10 +526,17 @@
 </html>
 
 <script src="./scripts/prodcatalogfromnav.js"></script>
+
 <script type="module">
     import mobileDescriptions from "./components/prodCatalogbottom.js"
     document.querySelector("#bottomsection").innerHTML = mobileDescriptions();
 
-    import {footer} from './components/header_footer.js'
+    import {footer, header} from './components/header_footer.js'
     document.querySelector("footer").innerHTML = footer()
+    document.querySelector("header").innerHTML = header();
+
+    import headerFunctionality from "./scripts/header.js"
+    headerFunctionality()
+
 </script>
+<!-- <script src="./scripts/header.js"></script> -->

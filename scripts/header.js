@@ -1,5 +1,6 @@
 
-//Ensuring the pop div stays open when needed
+function headerFunctionality(){
+    //Ensuring the pop div stays open when needed
 document.querySelector("#popupdiv").addEventListener("mouseover",()=>{
     document.querySelector("#popupdiv").style.display = "block"
 })
@@ -37,11 +38,11 @@ document.querySelector("#popupdiv").addEventListener("mouseleave",()=>{
 
 
 //Search functionality
-/*
-document.querySelector("***search button id here***").addEventListener("click",()=>{
+
+document.querySelector("#searchbtn").addEventListener("click",()=>{
     let terms = ["phone","smartphone","mobile","vivo","oppo","iphone","samsung","realme","redmi"]
-    let searched_term = document.querySelector("***search bar id here ***").value;
-    searched_term = searched_term.toLower()
+    let searched_term = document.querySelector("#q").value;
+    searched_term = searched_term.toLowerCase()
     let term_found = false;
     for(let i =0; i<terms.length;i++){
         if(searched_term===terms[i]){
@@ -53,4 +54,7 @@ document.querySelector("***search button id here***").addEventListener("click",(
         alert("Invalid Search! Only Mobile Products Available")
     }
 })
-*/
+}
+
+export default headerFunctionality
+
