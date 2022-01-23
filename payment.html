@@ -174,14 +174,18 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-let items=JSON.parse(localStorage.getItem("relianceCart"))
+let total=JSON.parse(localStorage.getItem("totalAmount"))
 
 
 let pay=document.getElementById("pay")
-pay.innerText="PAY RS."+items.price
+pay.innerText="PAY RS."+ total;
 pay.addEventListener("click",pop)
 function pop(){
-    alert("Pay Success\n your order will be delivered\n thank you!!!")
+    setTimeout(()=>{
+        alert("Pay Success\n your order will be delivered\n thank you!!!")
+
+    },2000)
+    
     
 }
 
