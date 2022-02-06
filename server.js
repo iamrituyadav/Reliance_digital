@@ -8,5 +8,8 @@ const middlewares = jsonServer.defaults()
 //setting up api url
 server.use(middlewares)
 server.use(jsonServer.bodyParser)
+server.use('/health',function(req, res){
+    res.send('Server running')
+})
 server.use('/api', router)
 server.listen(PORT, () => console.log(`JSON Server is running on port ${PORT}`))
